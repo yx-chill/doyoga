@@ -1,0 +1,87 @@
+.banner {
+  height: 582px;
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg?raw=true');
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.feel {
+  &__content {
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__content1 {
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1593810450967-f9c42742e326.jpeg?raw=true');
+  }
+
+  &__content2 {
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1593810451137-5dc55105dace.jpeg?raw=true');
+  }
+
+  &__content3 {
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1599901860904-17e6ed7083a0.jpeg?raw=true');
+  }
+
+  @include md {
+    &__content {
+      height: 252px;
+    }
+  }
+
+  @include lg {
+    &__content {
+      height: 420px;
+    }
+  }
+}
+
+.teachers {
+  .yoga-photo {
+    height: 100%;
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1540206276207-3af25c08abc4.jpeg?raw=true');
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__photo {
+    width: 48px;
+    height: 48px;
+  }
+
+  @include sm {
+    &__photo {
+      width: 68px;
+      height: 68px;
+    }
+
+    .carol {
+      width: 94px;
+      height: 94px;
+    }
+  }
+}
+
+.course {
+  &__photo {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  @include lg {
+    height: 573px;
+  }
+}
+
+.plan {
+  img {
+    height: 238px;
+  }
+
+  @include lg {
+    img {
+      border-top-left-radius: 1rem !important;
+    }
+  }
+}

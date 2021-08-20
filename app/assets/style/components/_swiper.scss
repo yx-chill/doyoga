@@ -1,0 +1,10 @@
+.courseSwiper {
+    img {
+        height: 445px;
+    }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
