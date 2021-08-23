@@ -1,0 +1,21 @@
+.active {
+    .plan {
+        border-width: 4px !important;
+    }
+
+    .arrow {
+        display: block !important;
+    }
+}
+.choose-level {
+    border-color: white !important;
+    i {
+        color: white !important;
+    }
+}
+.choose-step {
+    span {
+        background-color: #907A7B !important;
+        color: white !important;
+    }
+}

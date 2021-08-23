@@ -1,4 +1,5 @@
 body {
+    // font-family: source-han-sans-traditional, sans-serif;
     font-family: source-han-sans-traditional, sans-serif;
     line-height: 1.5;
     font-weight: 400;
@@ -9,4 +10,11 @@ img {
     height: auto;
     vertical-align: middle;
     object-fit: cover;
+}
+.pointer {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #C0A4A5;
 }

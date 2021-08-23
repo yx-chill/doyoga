@@ -73,15 +73,3 @@
     height: 573px;
   }
 }
-
-.plan {
-  img {
-    height: 238px;
-  }
-
-  @include lg {
-    img {
-      border-top-left-radius: 1rem !important;
-    }
-  }
-}

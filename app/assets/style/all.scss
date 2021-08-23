@@ -5,12 +5,16 @@
 @import 'base/base';
 
 @import 'helpers/mixin';
+@import 'helpers/utlis';
 
 @import 'components/swiper';
+@import 'components/card';
 
 @import 'layout/footer';
 @import 'layout/header';
-@import 'layout/home';
 @import 'layout/social';
+
+@import 'pages/home';
+@import 'pages/reservation';
 
 @import 'vendors/hover';

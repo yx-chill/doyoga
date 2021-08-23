@@ -1,0 +1,17 @@
+.plan {
+    img {
+        height: 238px;
+    }
+
+    @include lg {
+        img {
+            border-top-left-radius: 1rem !important;
+        }
+    }
+}
+
+.choose-course:hover {
+    .plan {
+        border-width: 4px !important;
+    }
+}

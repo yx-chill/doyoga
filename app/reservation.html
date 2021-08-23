@@ -1,0 +1,321 @@
+---
+title: reservation
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<section class="pt-11 pt-md-13">
+    <div class="container">
+        <h2 class="text-secondary text-center mb-6">立即預約</h2>
+        <div class="row justify-content-center mb-9">
+            <div class="step step-choose col-4 col-md-2 pointer choose-step">
+                <span class="badge bg-light text-secondary fw-regular lh-base rounded-3 w-100 py-4 me-6 me-md-9"
+                    data-value="1">選擇方案</span>
+            </div>
+            <div class="step step-info col-4 col-md-2 pointer">
+                <span class="badge bg-light text-secondary fw-regular lh-base rounded-3 w-100 py-4 me-6 me-md-9"
+                    data-value="2">填寫資料</span>
+            </div>
+            <div class="step step-done col-4 col-md-2 pointer">
+                <span class="badge bg-light text-secondary fw-regular lh-base rounded-3 w-100 py-4 me-6 me-md-9"
+                    data-value="3">完成預約</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<secton class="choose d-none">
+    <div class="container">
+        <div class="row justify-content-center pb-15 pb-lg-16">
+            <div class="choose-course d-lg-block col-12 col-lg-4 pointer position-relative">
+                <div class="plan card border border-primary rounded-3">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <img class="w-100 rounded-top-3 rounded-top-md-0 rounded-start-md-3 rounded-start-lg-0 rounded-top-lg-3"
+                                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true"
+                                alt="photo">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <div class="card-body p-8 ps-md-0 ps-lg-8">
+                                <h4 class="text-secondary text-center text-md-start text-lg-center mb-1">首次體驗</h4>
+                                <p class="fs-4 text-primary text-center text-md-start text-lg-center mb-2">NT $450 / 次
+                                </p>
+                                <p class="text-secondary mb-10 mb-md-8 mb-lg-10">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                                <button class="course__choose fs-4 btn btn-primary text-white w-100 p-3">選擇課程</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-6">
+                    <div class="arrow d-none col-12 text-center">
+                        <i class="fas fa-caret-down fs-1 text-secondary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="choose-course d-lg-block col-12 col-lg-4 pointer position-relative">
+                <div class="plan card border border-primary rounded-3">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <img class="w-100 rounded-top-3 rounded-top-md-0 rounded-start-md-3 rounded-start-lg-0 rounded-top-lg-3"
+                                src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=926&q=80"
+                                alt="photo">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <div class="card-body p-8  ps-md-0 ps-lg-8">
+                                <h4 class="text-secondary text-center text-md-start text-lg-center mb-1">短期體驗</h4>
+                                <p class="fs-4 text-primary text-center text-md-start text-lg-center mb-2">NT $1800 / 月
+                                </p>
+                                <p class="text-secondary mb-10 mb-md-8 mb-lg-10">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+                                <button class="course__choose fs-4 btn btn-primary text-white w-100 p-3">選擇課程</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-6">
+                    <div class="arrow d-none col-12 text-center">
+                        <i class="fas fa-caret-down fs-1 text-secondary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="choose-course d-lg-block col-12 col-lg-4 pointer position-relative">
+                <div class="plan card border border-primary rounded-3">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <img class="w-100 rounded-top-3 rounded-top-md-0 rounded-start-md-3 rounded-top-lg-3 rounded-start-lg-0"
+                                src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                alt="photo">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <div class="card-body p-8 ps-md-0 ps-lg-8">
+                                <h4 class="text-secondary text-center text-md-start text-lg-center mb-1">長期體驗</h4>
+                                <p class="fs-4 text-primary text-center text-md-start text-lg-center mb-2">NT $5600 / 季
+                                </p>
+                                <p class="text-secondary mb-10 mb-md-8 mb-lg-10">分基礎、中級、高級可以選擇。有長期習慣做瑜珈者建議選擇此方案。</p>
+                                <button class="course__choose fs-4 btn btn-primary text-white w-100 p-3">選擇課程</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-6">
+                    <div class="arrow d-none col-12 text-center">
+                        <i class="fas fa-caret-down fs-1 text-secondary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-10">
+                <div class="course-level row bg-secondary g-0 px-10 pt-10 pb-13">
+                    <h2 class="text-white text-center mb-9">選擇課程階級</h2>
+                    <div class="swiper-container chooseSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide pointer h-auto">
+                                <div
+                                    class="level shadow border border-3 border-primary bg-primary text-white rounded-3 p-8 d-flex justify-content-between">
+                                    <div>
+                                        <h2>基礎 Basic</h2>
+                                        <p class="mb-4">基礎課程 <span
+                                                class="badge bg-secondary fw-light px-6 py-1 rounded-3">
+                                                60 min</span></p>
+                                        <ul class="list-style-none">
+                                            <li class="mb-1">・入體位法動作解說</li>
+                                            <li class="mb-1">・瑜珈基礎動作、順位</li>
+                                            <li>・適合任何階段練習者</li>
+                                        </ul>
+                                    </div>
+                                    <i class="icon far fa-check-circle fs-1 text-success"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide pointer h-auto position-relative">
+                                <div
+                                    class="level shadow border border-3 border-primary bg-primary text-white rounded-3 p-8 d-flex justify-content-between">
+                                    <div>
+                                        <h2>中階 Intermediate</h2>
+                                        <p class="mb-4">艾揚格、哈達、寰宇 <span
+                                                class="badge bg-secondary fw-light px-6 py-1 rounded-3">
+                                                60 min</span></p>
+                                        <ul class="list-style-none">
+                                            <li class="mb-1">・刺激身體七個層次為核心</li>
+                                            <li class="mb-1">・結合流暢體位法練習、呼吸、觀想</li>
+                                            <li>・適合半年以上練習者</li>
+                                        </ul>
+                                    </div>
+                                    <i
+                                        class="icon far fa-check-circle fs-1 text-success position-absolute end-0 me-8"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide pointer h-auto">
+                                <div
+                                    class="level shadow border border-3 border-primary bg-primary text-white rounded-3 p-8 d-flex justify-content-between">
+                                    <div>
+                                        <h2>高階 Advanced</h2>
+                                        <p class="mb-4">阿斯坦加、陰陽 <span
+                                                class="badge bg-secondary fw-light px-6 py-1 rounded-3">
+                                                60 min</span></p>
+                                        <ul class="list-style-none">
+                                            <li class="mb-1">・充分打開身體每個部位</li>
+                                            <li class="mb-1">・顯著提升力量與柔軟度</li>
+                                            <li>・適合一年以上練習者</li>
+                                        </ul>
+                                    </div>
+                                    <i class="icon far fa-check-circle fs-1 text-success ms-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choosen col-12 text-center text-secondary">
+                <p class="mb-1">您選擇的是</p>
+                <h4 class="text-decoration-underline">首次體驗課程-基礎</h4>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 text-secondary pt-10 mb-9">
+                <h2 class="text-center mb-6">預約須知</h2>
+                <ul>
+                    <li class="mb-1">1. 如果有特殊體質、特殊狀況，請主動告知。</li>
+                    <li class="mb-1">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
+                    <li class="mb-1">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
+                    <li>4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
+                </ul>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-12 col-md-4">
+                <a class="continue-choose btn btn-primary fs-4 text-white w-100 py-3">繼續預約</a>
+            </div>
+        </div>
+    </div>
+</secton>
+
+<section class="info d-none">
+    <div class="container">
+        <p class="text-center text-dark mb-9">您選擇的是<span class="fs-4 text-primary ms-6">首次體驗課程-基礎</span></p>
+        <div class="row justify-content-center">
+            <form class="col-12 col-md-7 col-xxl-4 tex-dark">
+                <div class="mb-9">
+                    <p class="mb-6" for="yoga">1. 是否接觸過瑜珈?</p>
+                    <label class="pointer me-9" for="yoga-true">
+                        <input class="pointer me-1" type="radio" id="yoga-true" name="yoga">是</label>
+                    <label class="pointer" for="yoga-false">
+                        <input class="pointer me-1" type="radio" id="yoga-false" name="yoga">否</label>
+                </div>
+                <div class="mb-9">
+                    <p class="mb-6">2. 想改善的生活問題?</p>
+                    <div class="row mb-6">
+                        <div class="col-4">
+                            <label class="pointer" for="problem-1">
+                                <input class="pointer me-1" type="checkbox" id="problem-1">肌耐力不足</label>
+                        </div>
+                        <div class="col-4">
+                            <label class="pointer" for="problem-2">
+                                <input class="pointer me-1" type="checkbox" id="problem-2">柔軟度不佳</label>
+                        </div>
+                        <div class="col-4">
+                            <label class="pointer" for="problem-3">
+                                <input class="pointer me-1" type="checkbox" id="problem-3">壓力大</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="pointer" for="problem-4">
+                                <input class="pointer me-1" type="checkbox" id="problem-4">姿勢不正</label>
+                        </div>
+                        <div class="col-4">
+                            <label class="pointer" for="problem-5">
+                                <input class="pointer me-1" type="checkbox" id="problem-5">睡眠品質差</label>
+                        </div>
+                        <div class="col-4">
+                            <label class="pointer" for="problem-6">
+                                <input class="pointer me-1" type="checkbox" id="problem-6">注意力不足</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-9">
+                    <p class="mb-6">3. 每週累積運動量約為多少？</p>
+                    <div class="row mb-1">
+                        <label class="pointer col-5" for="sport-1"><input class="pointer me-1" type="radio" name="sport"
+                                id="sport-1">150 分鐘以上</label>
+                        <label class="pointer col-5" for="sport-2"><input class="pointer me-1" type="radio" name="sport"
+                                id="sport-2">75~150 分鐘</label>
+                    </div>
+                    <div class="row">
+                        <label class="pointer col-5" for="sport-3"><input class="pointer me-1" type="radio" name="sport"
+                                id="sport-3">30~75 分鐘</label>
+                        <label class="pointer col-5" for="sport-4"><input class="pointer me-1" type="radio" name="sport"
+                                id="sport-4">30 分鐘以下</label>
+                    </div>
+                </div>
+                <div class="mb-9">
+                    <p class="mb-1">4. 上課預約報到日</p>
+                    <p class="fs-6 mb-3">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
+                    <input class="px-3 py-2 text-primary border border-primary rounded-1 pointer" type="date">
+                </div>
+                <div class="text-secondary mb-15 mb-lg-16">
+                    <p class="mb-6 text-dark">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+                    <div class="row mb-3 g-0">
+                        <div class="col-6"><label class="pointer" for="name">姓名</label></div>
+                        <div class="col-6"><label class="pointer" for="age">年齡</label></div>
+                    </div>
+                    <div class="d-flex mb-6">
+                        <input class="text-secondary rounded-1 border border-primary pointer px-4 py-2 me-3 w-50"
+                            type="text" id="name" placeholder="請輸入您的姓名">
+                        <input class="text-secondary rounded-1 border border-primary pointer px-4 py-2 w-50" type="text"
+                            id="age" placeholder="請輸入您的年齡">
+                    </div>
+                    <label class="mb-3 pointer" for="gender">性別</label>
+                    <select class="d-block border border-primary text-primary pointer px-4 py-2 rounded-1 mb-6"
+                        id="gender">
+                        <option class="text-primary" value="male">男</option>
+                        <option class="text-primary" value="female">女</option>
+                    </select>
+                    <label class="d-block pointer mb-6" for="email">電子信箱</label>
+                    <input class="rounded-1 border border-primary pointer px-4 py-2 w-100 mb-6" type="email" id="email"
+                        placeholder="email@example.com">
+                    <label class="d-block pointer mb-6" for="tel">手機號碼</label>
+                    <input class="rounded-1 border border-primary pointer px-4 py-2 w-100 mb-9" type="email" id="tel"
+                        placeholder="0912-345-678">
+                    <button type="button" class="continue-info btn btn-primary text-white py-3 w-100">送出</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="done">
+    <div class="container">
+        <div class="row justify-content-center text-secondary pb-15 pb-lg-16">
+            <div class="col-12 text-center">
+                <i class="far fa-check-circle d-block mb-7 fs-1"></i>
+                <p class="fs-4 mb-9">已完成預約，以下是您的預約資訊:</p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="accordion mb-8" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-secondary text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                預約資訊
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="mb-5">您預約的是<span class="fs-4 text-primary ms-3">首次體驗課程-基礎</span></p>
+                                <p class="py-1">上課預約報到日：2021/07/21</p>
+                                <p class="py-1">預約人：Joanne Chen</p>
+                                <p class="py-1">年齡：18 歲</p>
+                                <p class="py-1">性別：女</p>
+                                <p class="py-1">電子信箱：example123@gmail.com</p>
+                                <p class="py-1">手機號碼：0912-345-678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4 class="text-center mb-3">上課注意事項</h4>
+                <p class="mb-9">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 <br> 如欲更改體驗時間請提前通知我們喔！</p>
+                <a href="index.html" class="btn btn-secondary text-white py-3 w-100">返回首頁</a>
+            </div>
+        </div>
+    </div>
+</section>
