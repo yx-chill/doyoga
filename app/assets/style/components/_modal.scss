@@ -1,0 +1,15 @@
+.detail-photo {
+    height: 165px !important;
+    @include md {
+        height: auto !important;
+    }
+}
+.modal-dialog {
+    max-width: 345px;
+    @include md {
+        max-width: 690px;
+    }
+    @include lg {
+        max-width: 920px;
+    }
+}
