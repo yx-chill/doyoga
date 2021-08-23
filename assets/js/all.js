@@ -60,7 +60,7 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev"
   }
 });
-var swiper = new Swiper(".chooseSwiper", {
+var chooseSwiper = new Swiper(".chooseSwiper", {
   slidesPerColumnFill: 'row',
   slidesPerView: 1,
   slidesPerColumn: 3,
@@ -81,6 +81,24 @@ var swiper = new Swiper(".chooseSwiper", {
       slidesPerView: 3,
       slidesPerColumn: 1,
       spaceBetween: 20
+    }
+  }
+});
+var teacherSwiper = new Swiper(".teacherSwiper", {
+  slidesPerColumnFill: 'row',
+  slidesPerView: 1,
+  slidesPerColumn: 4,
+  spaceBetween: 30,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerColumn: 1,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 3,
+      slidesPerColumn: 1,
+      spaceBetween: 30
     }
   }
 });
