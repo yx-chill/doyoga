@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="header text-primary bg-light py-7">
+  <header class="header text-primary bg-light py-7 position-relative">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <h1><a class="logo d-block" href="index.html">DOYOGA</a></h1>
@@ -22,22 +22,32 @@
           <li><a class="d-block fw-light px-6" href="curriculum.html">當月課表</a></li>
         </ul>
         <div class="d-none d-md-flex">
-          <a href="reservation.html" class="btn btn-light text-secondary border border-secondary border-1 rounded-3 px-6 py-3 me-6">立即預約</a>
-          <a href="contact.html" class="btn btn-light text-secondary border border-secondary border-1 rounded-3 px-6 py-3">聯絡我們</a>
+          <a href="reservation.html"
+            class="btn btn-light text-secondary border border-secondary border-1 rounded-3 px-6 py-3 me-6">立即預約</a>
+          <a href="contact.html"
+            class="btn btn-light text-secondary border border-secondary border-1 rounded-3 px-6 py-3">聯絡我們</a>
         </div>
-        <i class="fas fa-align-justify fs-1 d-md-none"></i>
+        <i class="ham fas fa-align-justify d-md-none fs-1"></i>
+        <ul class="ham-menu h-0 position-absolute end-0 top-100 w-100 text-center">
+          <li class="border-top border-primary"><a class="d-block bg-light fw-light py-1" href="course.html">課程介紹</a>
+          </li>
+          <li class="border-top border-primary"><a class="d-block bg-light fw-light py-1"
+              href="surroundings.html">瑜珈空間</a></li>
+          <li class="border-top border-primary"><a class="d-block bg-light fw-light py-1"
+              href="curriculum.html">當月課表</a></li>
+        </ul>
       </div>
     </div>
   </header>
 
   <div class="social d-none d-md-flex flex-column position-fixed end-0 pe-6">
-    <a href="#"><img class="rounded-3 bg-secondary mb-3"
+    <a href="https://www.facebook.com/" target="__blank"><img class="rounded-3 bg-secondary mb-3"
         src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week1/facebook.svg"
         alt="fb logo"></a>
-    <a href="#"><img class="rounded-3 bg-secondary mb-3"
+    <a href="https://www.instagram.com/" target="__blank"><img class="rounded-3 bg-secondary mb-3"
         src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week1/instagram-alt.svg"
         alt="ig logo"></a>
-    <a href="#"><img class="rounded-3 bg-secondary"
+    <a href="https://line.me/zh-hant/" target="__blank"><img class="rounded-3 bg-secondary"
         src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week1/line.svg"
         alt="line logo"></a>
   </div>
@@ -63,7 +73,7 @@
     </div>
 </section>
 
-<secton class="choose d-none">
+<secton class="choose">
     <div class="container">
         <div class="row justify-content-center pb-15 pb-lg-16">
             <div class="choose-course d-lg-block col-12 col-lg-4 pointer position-relative">
@@ -223,7 +233,7 @@
     </div>
 </secton>
 
-<section class="info d-none">
+<section class="info">
     <div class="container">
         <p class="text-center text-dark mb-9">您選擇的是<span class="fs-4 text-primary ms-6">首次體驗課程-基礎</span></p>
         <div class="row justify-content-center">
@@ -362,12 +372,15 @@
   <section class="subscript bg-secondary border-bottom border-white py-9">
     <div class="container">
       <div class="row g-0 justify-content-between">
-        <div class="col-12 col-md-auto fs-3 align-self-center fw-normal text-white mb-3 mb-md-0">現在訂閱，獲得課程優惠碼！</div>
-        <div class="col-12 col-md-auto">
-          <form class="d-flex justify-content-md-end">
-            <input type="email" class="fs-4 border-0 rounded-start px-6 py-3" placeholder="輸入您的電子信箱">
-            <button type="submit" class="btn btn-primary fs-4 text-white rounded-0 rounded-end px-6 py-3">訂閱</button>
-          </form>
+        <div class="col-12 col-md-7 col-lg-5 fs-3 align-self-center fw-normal text-white mb-3 mb-lg-0">現在訂閱，獲得課程優惠碼！
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="input-group">
+            <input type="email" class="form-control fs-4 border-0 rounded-start px-6 py-3" placeholder="輸入您的電子信箱"
+              aria-label="Recipient's username" aria-describedby="subscript">
+            <button class="btn btn-primary fs-4 text-white rounded-0 rounded-end px-6 py-3" type="button"
+              id="subscript">訂閱</button>
+          </div>
         </div>
       </div>
     </div>
@@ -386,13 +399,13 @@
         </div>
         <div class="col-6 order-md-3 col-md-3">
           <div class="d-flex justify-content-end">
-            <a class="hvr-float" href="#"><img class="me-3 rounded-3"
+            <a class="hvr-float" href="https://www.facebook.com/" target="__blank"><img class="me-3 rounded-3"
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week1/facebook.svg"
                 alt="fb logo"></a>
-            <a class="hvr-float" href="#"><img class="me-3"
+            <a class="hvr-float" href="https://www.instagram.com/" target="__blank"><img class="me-3"
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week3/icon-ig.svg"
                 alt="ig logo"></a>
-            <a class="hvr-float" href="#"><img
+            <a class="hvr-float" href="https://line.me/zh-hant/" target="__blank"><img
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week1/line.svg"
                 alt="line logo"></a>
           </div>

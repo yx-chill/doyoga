@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="header text-primary bg-light py-7">
+  <header class="header text-primary bg-light py-7 position-relative">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <h1><a class="logo d-block" href="index.html">DOYOGA</a></h1>
@@ -22,22 +22,32 @@
           <li><a class="d-block fw-light px-6" href="curriculum.html">當月課表</a></li>
         </ul>
         <div class="d-none d-md-flex">
-          <a href="reservation.html" class="btn btn-light text-secondary border border-secondary border-1 rounded-3 px-6 py-3 me-6">立即預約</a>
-          <a href="contact.html" class="btn btn-light text-secondary border border-secondary border-1 rounded-3 px-6 py-3">聯絡我們</a>
+          <a href="reservation.html"
+            class="btn btn-light text-secondary border border-secondary border-1 rounded-3 px-6 py-3 me-6">立即預約</a>
+          <a href="contact.html"
+            class="btn btn-light text-secondary border border-secondary border-1 rounded-3 px-6 py-3">聯絡我們</a>
         </div>
-        <i class="fas fa-align-justify fs-1 d-md-none"></i>
+        <i class="ham fas fa-align-justify d-md-none fs-1"></i>
+        <ul class="ham-menu h-0 position-absolute end-0 top-100 w-100 text-center">
+          <li class="border-top border-primary"><a class="d-block bg-light fw-light py-1" href="course.html">課程介紹</a>
+          </li>
+          <li class="border-top border-primary"><a class="d-block bg-light fw-light py-1"
+              href="surroundings.html">瑜珈空間</a></li>
+          <li class="border-top border-primary"><a class="d-block bg-light fw-light py-1"
+              href="curriculum.html">當月課表</a></li>
+        </ul>
       </div>
     </div>
   </header>
 
   <div class="social d-none d-md-flex flex-column position-fixed end-0 pe-6">
-    <a href="#"><img class="rounded-3 bg-secondary mb-3"
+    <a href="https://www.facebook.com/" target="__blank"><img class="rounded-3 bg-secondary mb-3"
         src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week1/facebook.svg"
         alt="fb logo"></a>
-    <a href="#"><img class="rounded-3 bg-secondary mb-3"
+    <a href="https://www.instagram.com/" target="__blank"><img class="rounded-3 bg-secondary mb-3"
         src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week1/instagram-alt.svg"
         alt="ig logo"></a>
-    <a href="#"><img class="rounded-3 bg-secondary"
+    <a href="https://line.me/zh-hant/" target="__blank"><img class="rounded-3 bg-secondary"
         src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week1/line.svg"
         alt="line logo"></a>
   </div>
@@ -105,7 +115,7 @@
             <h2 class="text-secondary text-center text-lg-start fw-normal -1">頂尖師資、專業教學</h2>
             <p class="text-primary fs-4 mb-8">強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。</p>
           </div>
-          <div class="col-12 col-md-11 col-lg-12 offset-md-1 offset-lg-0 mb-6">
+          <div class="teachers-text col-12 col-md-9 col-lg-12 offset-md-3 offset-lg-0 mb-6 pointer">
             <div class="d-flex align-items-center bg-white rounded-3 p-6 px-md-11 py-md-10">
               <img class="teachers__photo carol"
                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-1.png?raw=true"
@@ -117,7 +127,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-9 col-lg-12 offset-md-3 offset-lg-0 mb-6">
+          <div class="teachers-text col-12 col-md-9 col-lg-12 offset-md-3 offset-lg-0 mb-6 pointer">
             <div class="d-flex align-items-center bg-white rounded-3 p-6 px-md-9 py-md-8">
               <img class="teachers__photo"
                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-2.png?raw=true"
@@ -128,7 +138,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-9 col-lg-12 offset-md-3 offset-lg-0">
+          <div class="teachers-text col-12 col-md-9 col-lg-12 offset-md-3 offset-lg-0 pointer">
             <div class="d-flex align-items-center bg-white rounded-3 p-6 px-md-9 py-md-8">
               <img class="teachers__photo"
                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-3.png?raw=true"
@@ -155,19 +165,19 @@
             class="fas fa-long-arrow-alt-right hvr-icon ms-3"></i></a>
       </div>
       <div class="col-6 col-md-4 order-md-1">
-        <img class="h-100 rounded-3"
+        <img class="h-100 rounded-3 "
           src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
           alt="photo">
       </div>
       <div class="col-6 col-md-2 order-md-2">
-        <div class="row">
-          <div class="col-12 d-none d-md-block mb-9">
-            <img class="rounded-3"
+        <div class="row h-100">
+          <div class="col-12 h-100 h-md-50 pb-md-5">
+            <img class="rounded-3 w-100 h-100"
               src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/white%20round%20table%20near%20brown%20wooden%20chair.jpg?raw=true"
               alt="photo">
           </div>
-          <div class="col-12">
-            <img class="rounded-3"
+          <div class="col-12 d-none d-md-block h-100 h-md-50 pt-5">
+            <img class="rounded-3 w-100 h-100"
               src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20blue%20denim%20jeans%20doing%20yoga.jpg?raw=true"
               alt="photo">
           </div>
@@ -177,68 +187,34 @@
   </div>
 </section>
 
-<section class="course bg-light py-11 py-sm-12 py-md-13 position-relative">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
+<section class="course bg-light py-11 py-sm-12 py-md-13">
+  <div class="container">
+    <div class="row align-items-center">
       <div class="col-12 col-md-6 col-lg-5 offset-lg-1 mb-6 mb-md-0">
         <h2 class="text-secondary fw-normal mb-1">精心設計、課程多元</h2>
         <p class="text-primary fs-4 mb-8">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</p>
         <a href="course.html" class="text-secondary hvr-icon-forward d-block mb-6 mb-md-0">課程介紹<i
             class="fas fa-long-arrow-alt-right hvr-icon ms-3"></i></a>
       </div>
-      <div class="col-6 d-none d-lg-block position-absolute end-0 pe-0">
+      <div class="col-12 col-md-6">
         <div class="swiper-container courseSwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide ratio ratio-1x1">
               <img class="rounded-3"
                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga%20beside%20wall.jpg?raw=true"
                 alt="photo"></div>
-            <div class="swiper-slide">
+            <div class="swiper-slide ratio ratio-1x1">
               <img class="rounded-3"
                 src="https://images.unsplash.com/photo-1574454941059-9408c4d3f268?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                 alt="photo">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide ratio ratio-1x1">
               <img class="rounded-3"
                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true"
                 alt="photo">
             </div>
-            <div class="swiper-slide">
-              <img class="rounded-3"
-                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true"
-                alt="photo">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 d-lg-none">
-        <div class="row g-5 g-sm-9 mb-6">
-          <div class="col-6">
-            <div class="course__photo">
-              <img class="rounded-3 h-100"
-                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga%20beside%20wall.jpg?raw=true"
-                alt="photo">
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="corese__photo h-100">
-              <img class="rounded-3"
-                src="https://images.unsplash.com/photo-1574454941059-9408c4d3f268?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                alt="photo">
-            </div>
-          </div>
-        </div>
-        <div class="row g-5 g-sm-9 g-sm-1">
-          <div class="col-6">
-            <div class="corese__photo h-100">
-              <img class="rounded-3"
-                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true"
-                alt="photo">
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="course__photo h-100">
-              <img class="rounded-3"
+            <div class="swiper-slide ratio ratio-1x1">
+              <img class="rounded-3 w-100"
                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true"
                 alt="photo">
             </div>
@@ -439,12 +415,15 @@
   <section class="subscript bg-secondary border-bottom border-white py-9">
     <div class="container">
       <div class="row g-0 justify-content-between">
-        <div class="col-12 col-md-auto fs-3 align-self-center fw-normal text-white mb-3 mb-md-0">現在訂閱，獲得課程優惠碼！</div>
-        <div class="col-12 col-md-auto">
-          <form class="d-flex justify-content-md-end">
-            <input type="email" class="fs-4 border-0 rounded-start px-6 py-3" placeholder="輸入您的電子信箱">
-            <button type="submit" class="btn btn-primary fs-4 text-white rounded-0 rounded-end px-6 py-3">訂閱</button>
-          </form>
+        <div class="col-12 col-md-7 col-lg-5 fs-3 align-self-center fw-normal text-white mb-3 mb-lg-0">現在訂閱，獲得課程優惠碼！
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="input-group">
+            <input type="email" class="form-control fs-4 border-0 rounded-start px-6 py-3" placeholder="輸入您的電子信箱"
+              aria-label="Recipient's username" aria-describedby="subscript">
+            <button class="btn btn-primary fs-4 text-white rounded-0 rounded-end px-6 py-3" type="button"
+              id="subscript">訂閱</button>
+          </div>
         </div>
       </div>
     </div>
@@ -463,13 +442,13 @@
         </div>
         <div class="col-6 order-md-3 col-md-3">
           <div class="d-flex justify-content-end">
-            <a class="hvr-float" href="#"><img class="me-3 rounded-3"
+            <a class="hvr-float" href="https://www.facebook.com/" target="__blank"><img class="me-3 rounded-3"
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week1/facebook.svg"
                 alt="fb logo"></a>
-            <a class="hvr-float" href="#"><img class="me-3"
+            <a class="hvr-float" href="https://www.instagram.com/" target="__blank"><img class="me-3"
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week3/icon-ig.svg"
                 alt="ig logo"></a>
-            <a class="hvr-float" href="#"><img
+            <a class="hvr-float" href="https://line.me/zh-hant/" target="__blank"><img
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week1/line.svg"
                 alt="line logo"></a>
           </div>

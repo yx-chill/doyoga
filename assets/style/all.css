@@ -8190,6 +8190,10 @@ fieldset:disabled .btn {
   min-width: 100vw !important;
 }
 
+.h-0 {
+  height: 0 !important;
+}
+
 .h-25 {
   height: 25% !important;
 }
@@ -10440,6 +10444,24 @@ fieldset:disabled .btn {
   .d-sm-none {
     display: none !important;
   }
+  .h-sm-0 {
+    height: 0 !important;
+  }
+  .h-sm-25 {
+    height: 25% !important;
+  }
+  .h-sm-50 {
+    height: 50% !important;
+  }
+  .h-sm-75 {
+    height: 75% !important;
+  }
+  .h-sm-100 {
+    height: 100% !important;
+  }
+  .h-sm-auto {
+    height: auto !important;
+  }
   .flex-sm-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -11961,6 +11983,24 @@ fieldset:disabled .btn {
   }
   .d-md-none {
     display: none !important;
+  }
+  .h-md-0 {
+    height: 0 !important;
+  }
+  .h-md-25 {
+    height: 25% !important;
+  }
+  .h-md-50 {
+    height: 50% !important;
+  }
+  .h-md-75 {
+    height: 75% !important;
+  }
+  .h-md-100 {
+    height: 100% !important;
+  }
+  .h-md-auto {
+    height: auto !important;
   }
   .flex-md-fill {
     -webkit-box-flex: 1 !important;
@@ -13484,6 +13524,24 @@ fieldset:disabled .btn {
   .d-lg-none {
     display: none !important;
   }
+  .h-lg-0 {
+    height: 0 !important;
+  }
+  .h-lg-25 {
+    height: 25% !important;
+  }
+  .h-lg-50 {
+    height: 50% !important;
+  }
+  .h-lg-75 {
+    height: 75% !important;
+  }
+  .h-lg-100 {
+    height: 100% !important;
+  }
+  .h-lg-auto {
+    height: auto !important;
+  }
   .flex-lg-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -15006,6 +15064,24 @@ fieldset:disabled .btn {
   .d-xl-none {
     display: none !important;
   }
+  .h-xl-0 {
+    height: 0 !important;
+  }
+  .h-xl-25 {
+    height: 25% !important;
+  }
+  .h-xl-50 {
+    height: 50% !important;
+  }
+  .h-xl-75 {
+    height: 75% !important;
+  }
+  .h-xl-100 {
+    height: 100% !important;
+  }
+  .h-xl-auto {
+    height: auto !important;
+  }
   .flex-xl-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -16527,6 +16603,24 @@ fieldset:disabled .btn {
   }
   .d-xxl-none {
     display: none !important;
+  }
+  .h-xxl-0 {
+    height: 0 !important;
+  }
+  .h-xxl-25 {
+    height: 25% !important;
+  }
+  .h-xxl-50 {
+    height: 50% !important;
+  }
+  .h-xxl-75 {
+    height: 75% !important;
+  }
+  .h-xxl-100 {
+    height: 100% !important;
+  }
+  .h-xxl-auto {
+    height: auto !important;
   }
   .flex-xxl-fill {
     -webkit-box-flex: 1 !important;
@@ -18096,28 +18190,32 @@ img {
      object-fit: cover;
 }
 
-.pointer {
-  cursor: pointer;
-}
-
 ::-webkit-input-placeholder {
-  color: #C0A4A5;
+  color: #C0A4A5 !important;
 }
 
 ::-moz-placeholder {
-  color: #C0A4A5;
+  color: #C0A4A5 !important;
 }
 
 :-ms-input-placeholder {
-  color: #C0A4A5;
+  color: #C0A4A5 !important;
 }
 
 ::-ms-input-placeholder {
-  color: #C0A4A5;
+  color: #C0A4A5 !important;
 }
 
 ::placeholder {
-  color: #C0A4A5;
+  color: #C0A4A5 !important;
+}
+
+.menu-active {
+  height: 99px !important;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .active .plan {
@@ -18139,10 +18237,6 @@ img {
 .choose-step span {
   background-color: #907A7B !important;
   color: white !important;
-}
-
-.courseSwiper img {
-  height: 445px;
 }
 
 .swiper-button-prev::after,
@@ -18223,6 +18317,19 @@ img {
   white-space: nowrap;
 }
 
+.header .ham-menu {
+  height: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.header .ham-menu a:hover {
+  background-color: #e6dac3 !important;
+}
+
 .social {
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -18291,6 +18398,22 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .teachers-text {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+  }
+  .teachers-text:hover {
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1.2);
+        -ms-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+  }
+}
+
 .course__photo {
   width: 100%;
   aspect-ratio: 1;
@@ -18321,22 +18444,6 @@ img {
   }
 }
 
-.search {
-  width: 170px;
-}
-
-@media (min-width: 768px) {
-  .search {
-    width: 214px;
-  }
-}
-
-@media (min-width: 992px) {
-  .search {
-    width: 294px;
-  }
-}
-
 .course-photo {
   height: 196px;
 }
@@ -18364,6 +18471,27 @@ img {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.surroundings-photo {
+  height: 350px;
+}
+
+@media (min-width: 768px) {
+  .surroundings-photo {
+    height: 216px;
+  }
+}
+
+@media (min-width: 992px) {
+  .surroundings-photo {
+    height: 350px;
+  }
+}
+
+.surroundings-text {
+  bottom: 24px;
+  left: 24px;
 }
 
 /*!

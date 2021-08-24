@@ -34,8 +34,15 @@
 
 var courseSwiper = new Swiper(".courseSwiper", {
   slidesPerColumnFill: 'row',
-  slidesPerView: 1.5,
-  spaceBetween: 30
+  slidesPerView: 2,
+  slidesPerColumn: 2,
+  spaceBetween: 30,
+  breakpoints: {
+    992: {
+      slidesPerView: 1.5,
+      slidesPerColumn: 1
+    }
+  }
 });
 var swiper = new Swiper(".mySwiper", {
   slidesPerColumnFill: 'row',
@@ -46,13 +53,11 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      slidesPerColumn: 2,
-      spaceBetween: 30
+      slidesPerColumn: 2
     },
     992: {
       slidesPerView: 3,
-      slidesPerColumn: 1,
-      spaceBetween: 30
+      slidesPerColumn: 1
     }
   },
   navigation: {
@@ -92,13 +97,34 @@ var teacherSwiper = new Swiper(".teacherSwiper", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      slidesPerColumn: 1,
-      spaceBetween: 30
+      slidesPerColumn: 1
     },
     1200: {
       slidesPerView: 3,
-      slidesPerColumn: 1,
-      spaceBetween: 30
+      slidesPerColumn: 1
+    }
+  }
+});
+var curriculumSwiper = new Swiper(".curriculumSwiper", {
+  slidesPerView: .5,
+  breakpoints: {
+    768: {
+      slidesPerView: .75
+    },
+    1200: {
+      slidesPerView: 1
+    }
+  }
+});
+var surroundingsSwiper = new Swiper(".surroundingsSwiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 30,
+  breakpoints: {
+    768: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 4.5
     }
   }
 });
@@ -114,6 +140,15 @@ var continueChoose = document.querySelector('.continue-choose');
 var continueInfo = document.querySelector('.continue-info');
 var stepInfo = document.querySelector('.step-info');
 var stepDone = document.querySelector('.step-done');
+var hamberger = document.querySelector('.ham');
+var hamMenu = document.querySelector('.ham-menu');
+info.classList.add('d-none');
+done.classList.add('d-none');
+courseLevel.classList.add('d-none');
+hamberger.addEventListener('click', function (e) {
+  hamMenu.classList.toggle('menu-active');
+  console.log(111);
+});
 step.forEach(function (item) {
   item.addEventListener('click', function (e) {
     step.forEach(function (item) {
@@ -149,7 +184,9 @@ course.forEach(function (item) {
       item.classList.remove('active');
       item.classList.add('d-none');
     });
-    item.classList.add('active'); // item.classList.remove('');
+    item.classList.add('active');
+    item.classList.remove('d-none');
+    courseLevel.classList.remove('d-none');
   });
 });
 level.forEach(function (item) {
