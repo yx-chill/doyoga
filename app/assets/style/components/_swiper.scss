@@ -1,18 +1,14 @@
-.courseSwiper {
-    img {
-        height: 445px;
-    }
-}
-
 .swiper-button-prev::after,
 .swiper-button-next::after {
     content: '';
 }
+
 .chooseSwiper {
     .swiper-slide:hover {
         .level {
             border-color: white !important;
         }
+
         i {
             color: white !important;
         }

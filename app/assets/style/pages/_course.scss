@@ -1,35 +1,32 @@
 .photo-introduce {
     height: 218px;
+
     @include md {
         height: 341px;
     }
 }
-.search {
-    width: 170px;
-    @include md {
-        width: 214px;
-    }
-    @include lg {
-        width: 294px;
-    }
-}
+
 .course {
     &-photo {
         height: 196px;
     }
+
     &-tag {
         left: 35px;
         transform: translateY(-50%);
     }
+
     &-text {
         left: 39px;
         bottom: 24px
     }
 }
+
 .teacher {
     &-text {
         height: 418px;
     }
+
     &-photo {
         width: 96px;
         height: 96px;

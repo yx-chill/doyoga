@@ -61,6 +61,17 @@
       height: 94px;
     }
   }
+
+  &-text {
+    @include md {
+      transition: .5s;
+
+      &:hover {
+        transform-origin: right;
+        transform: scaleX(1.2);
+      }
+    }
+  }
 }
 
 .course {

@@ -8,4 +8,15 @@
         overflow: hidden;
         white-space: nowrap;
     }
+
+    .ham-menu {
+        height: 0;
+        transition: all 0.8s;
+        overflow: hidden;
+        z-index: 10;
+
+        a:hover {
+            background-color: darken(#F5F0E7, 10%) !important;
+        }
+    }
 }

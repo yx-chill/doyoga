@@ -1,0 +1,15 @@
+.surroundings {
+    &-photo {
+        height: 350px;
+        @include md {
+            height: 216px;
+        }
+        @include lg {
+            height: 350px;
+        }
+    }
+    &-text {
+        bottom: 24px;
+        left: 24px;
+    }
+}
