@@ -109,6 +109,13 @@ var surroundingsSwiper = new Swiper(".surroundingsSwiper", {
   },
 });
 
+const hamberger = document.querySelector('.ham');
+const hamMenu = document.querySelector('.ham-menu');
+
+hamberger.addEventListener('click', (e) => {
+  hamMenu.classList.toggle('menu-active');
+})
+
 const step = document.querySelectorAll('.step');
 const course = document.querySelectorAll('.choose-course');
 const level = document.querySelectorAll('.level');
@@ -121,17 +128,10 @@ const continueChoose = document.querySelector('.continue-choose');
 const continueInfo = document.querySelector('.continue-info');
 const stepInfo = document.querySelector('.step-info');
 const stepDone = document.querySelector('.step-done');
-const hamberger = document.querySelector('.ham');
-const hamMenu = document.querySelector('.ham-menu');
 
 info.classList.add('d-none');
 done.classList.add('d-none');
 courseLevel.classList.add('d-none');
-
-hamberger.addEventListener('click', (e) => {
-  hamMenu.classList.toggle('menu-active');
-  console.log(111);
-})
 
 step.forEach((item) => {
   item.addEventListener('click', (e) => {
