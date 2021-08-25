@@ -85,8 +85,12 @@ var teacherSwiper = new Swiper(".teacherSwiper", {
 });
 
 var curriculumSwiper = new Swiper(".curriculumSwiper", {
-  slidesPerView: .5,
+  slidesPerView: .3,
+  freeMode: true,
   breakpoints: {
+    576: {
+      slidesPerView: .5,
+    },
     768: {
       slidesPerView: .75,
     },
