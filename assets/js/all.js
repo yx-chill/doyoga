@@ -106,8 +106,12 @@ var teacherSwiper = new Swiper(".teacherSwiper", {
   }
 });
 var curriculumSwiper = new Swiper(".curriculumSwiper", {
-  slidesPerView: .5,
+  slidesPerView: .3,
+  freeMode: true,
   breakpoints: {
+    576: {
+      slidesPerView: .5
+    },
     768: {
       slidesPerView: .75
     },
@@ -128,6 +132,11 @@ var surroundingsSwiper = new Swiper(".surroundingsSwiper", {
     }
   }
 });
+var hamberger = document.querySelector('.ham');
+var hamMenu = document.querySelector('.ham-menu');
+hamberger.addEventListener('click', function (e) {
+  hamMenu.classList.toggle('menu-active');
+});
 var step = document.querySelectorAll('.step');
 var course = document.querySelectorAll('.choose-course');
 var level = document.querySelectorAll('.level');
@@ -140,15 +149,9 @@ var continueChoose = document.querySelector('.continue-choose');
 var continueInfo = document.querySelector('.continue-info');
 var stepInfo = document.querySelector('.step-info');
 var stepDone = document.querySelector('.step-done');
-var hamberger = document.querySelector('.ham');
-var hamMenu = document.querySelector('.ham-menu');
 info.classList.add('d-none');
 done.classList.add('d-none');
 courseLevel.classList.add('d-none');
-hamberger.addEventListener('click', function (e) {
-  hamMenu.classList.toggle('menu-active');
-  console.log(111);
-});
 step.forEach(function (item) {
   item.addEventListener('click', function (e) {
     step.forEach(function (item) {
