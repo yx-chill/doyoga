@@ -113,10 +113,10 @@ var surroundingsSwiper = new Swiper(".surroundingsSwiper", {
   },
 });
 
-const hamberger = document.querySelector('.ham');
+const hamburger = document.querySelector('.ham');
 const hamMenu = document.querySelector('.ham-menu');
 
-hamberger.addEventListener('click', (e) => {
+hamburger.addEventListener('click', (e) => {
   hamMenu.classList.toggle('menu-active');
 })
 
