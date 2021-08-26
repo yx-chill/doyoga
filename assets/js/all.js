@@ -132,9 +132,9 @@ var surroundingsSwiper = new Swiper(".surroundingsSwiper", {
     }
   }
 });
-var hamberger = document.querySelector('.ham');
+var hamburger = document.querySelector('.ham');
 var hamMenu = document.querySelector('.ham-menu');
-hamberger.addEventListener('click', function (e) {
+hamburger.addEventListener('click', function (e) {
   hamMenu.classList.toggle('menu-active');
 });
 var step = document.querySelectorAll('.step');
